@@ -6,8 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solution Of Law</title>
     <link rel="shortcut icon" href="assets/logo/education.png" type="image/x-icon">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'btn-color': '#B68C5A',
+                        'primary-color': '#707070',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -21,7 +33,147 @@
     </style>
 </head>
 
-<body>
+<body class="popins-fonts">
+    <!-- header section  -->
+    <header class="container mx-auto">
+        <!-- navbar section  -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>Services</a>
+                                <ul class="p-2">
+                                    <li><a>Tax Law</a></li>
+                                    <li><a>Child Support</a></li>
+                                    <li><a>Criminal Law</a></li>
+                                    <li><a>Business Law</a></li>
+                                    <li><a>Education Law</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Case</a>
+                                <ul class="p-2">
+                                    <li><a>About Tax Law</a></li>
+                                    <li><a>About Child Support</a></li>
+                                    <li><a>About Criminal Law</a></li>
+                                    <li><a>About Business Law</a></li>
+                                    <li><a>About Education Law</a></li>
+                                    <li><a>About Divorce Law</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Blog</a>
+                                <ul class="p-2">
+                                    <li><a>Learn Tax Law</a></li>
+                                    <li><a>Learn Child Support</a></li>
+                                    <li><a>Learn Criminal Law</a></li>
+                                    <li><a>Learn Business Law</a></li>
+                                    <li><a>Learn Education Law</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Contact Us</a>
+                                <ul class="p-2">
+                                    <li><a>For Tax Law</a></li>
+                                    <li><a>For Child Support</a></li>
+                                    <li><a>For Criminal Law</a></li>
+                                    <li><a>For Business Law</a></li>
+                                    <li><a>For Education Law</a></li>
+                                    <li><a>Others</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="assets/logo/logo2.png" alt="">
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li>
+                            <details>
+                                <summary>Services</summary>
+                                <ul class="p-2">
+                                    <li><a>Tax Law</a></li>
+                                    <li><a>Child Support</a></li>
+                                    <li><a>Criminal Law</a></li>
+                                    <li><a>Business Law</a></li>
+                                    <li><a>Education Law</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Case</summary>
+                                <ul class="p-2">
+                                    <li><a>About Tax Law</a></li>
+                                    <li><a>About Child Support</a></li>
+                                    <li><a>About Criminal Law</a></li>
+                                    <li><a>About Business Law</a></li>
+                                    <li><a>About Education Law</a></li>
+                                    <li><a>About Divorce Law</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Blog</summary>
+                                <ul class="p-2">
+                                    <li><a>Learn Tax Law</a></li>
+                                    <li><a>Learn Child Support</a></li>
+                                    <li><a>Learn Criminal Law</a></li>
+                                    <li><a>Learn Business Law</a></li>
+                                    <li><a>Learn Education Law</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Contact Us</summary>
+                                <ul class="p-2">
+                                    <li><a>For Tax Law</a></li>
+                                    <li><a>For Child Support</a></li>
+                                    <li><a>For Criminal Law</a></li>
+                                    <li><a>For Business Law</a></li>
+                                    <li><a>For Education Law</a></li>
+                                    <li><a>Others</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn bg-btn-color text-white text-lg font-semibold">Free Consultation</button>
+                </div>
+            </div>
+
+        </nav>
+        <!-- hero section  -->
+        <section>
+
+        </section>
+
+    </header>
+    <!-- Main section  -->
+    <main class="container mx-auto">
+
+    </main>
+    <!-- Footer section  -->
+    <footer>
+
+    </footer>
 
 </body>
 
